@@ -1,0 +1,39 @@
+#factorial of a  number
+fact=1
+n = int(input("Enter any number which's factorial u want you want:\n"));
+for i in range(n):
+    fact = fact*(i+1)
+    
+print(fact)
+
+#factorial of a numbers till where u want
+fact = 1
+n=7                                     #0! = 1, 1! = 1
+for i in range(n):
+    fact = fact * (i+1)
+    print(fact)
+
+#iteraitve factorial value
+def facto_inter(n):
+    fact = 1
+    for i in range(n):
+        fact = fact * (i+1)
+    return fact#it returns from function not a loop
+
+f= facto_inter(5)
+print(f)
+    
+
+
+#factorial using recursion
+#Recursion-> It is a function which calls itself,It is used to directly a mathematical formula as function 
+#ex- factorial(n) = n*factorial(n-1)
+
+
+def recursion_fact(n):
+    if n==1 or n==0:#base condition which dosent call the function itself
+        return 1
+    else:
+        return n*recursion_fact(n-1) #function calling itself   
+
+print(recursion_fact(4))    
