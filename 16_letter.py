@@ -18,6 +18,7 @@ letter = '''Dear <|NAME|>,
 name = input("Enter your name:\n")
 Date = input("Enter the date:\n")
 
+#we can't put directly values of NAME nd  DATE inside print...we can't do it anywhere..so we can use replace method
 letter = letter.replace("<|NAME|>",name)
 letter = letter.replace("<|DATE|>",Date)
 print(letter)
