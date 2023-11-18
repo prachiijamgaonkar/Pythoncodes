@@ -17,7 +17,7 @@ c=[45,"Prachi",False,5.4]
 print(c)
 
 #list slicing
-Homies = ["prachi","Rohan","sam","sneha","suhani",89,45]
+Homies = ["prachi","Rohini","smayra","sneha","suhani",89,45]
 print(Homies[0:5])
 print(Homies[-6:-1])
 print(Homies[-4:])
